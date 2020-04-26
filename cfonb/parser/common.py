@@ -133,7 +133,7 @@ class ParserContent01(Parser):
         ('account_nb',      G_AN,   11),
         ('_3',              G__,     2),
         ('prev_date',       G_N,     6),
-        ('_4',              G__,    50),
+        ('_4',              G_ALL,    50),
         ('prev_amount',     G_AMT,  14),
         ('_5',              G_ALL,  16),
      ]
