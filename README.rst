@@ -4,7 +4,10 @@ AFB to XLSX converter
 Usage
 -----
 This small GUI is built on top of the python-cfonb module.
-You can run it after installing the xlsxwriter dependency, with python convert.py
+You can run it after installing the xlsxwriter dependency, with
+
+`python convert.py`
+
 You'll be able to export AFB120 files to CSV and XLSX. The application displays a preview of the CSV output as well.
 
 Introduction
