@@ -1,18 +1,18 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.2.0'
+version = '1.0'
 
 long_description = open('README.rst').read()
 
 setup(
-      name='python-cfonb',
+      name='afb-to-xlsx',
       version=version,
-      description="Pure Python lib to read/write CFONB files.",
+      description="CFONB to CSV & XLSX converter based in Python-CFONB by Florent Pigout.",
       long_description=long_description,
       classifiers=[],
-      keywords='cfonb bank statement parser',
-      author='Florent Pigout',
+      keywords='cfonb bank statement parser gui csv',
+      author='Florent Pigout, Fernando Mendez',
       author_email='fpigout@anybox.fr',
       url='',
       license='MIT',
