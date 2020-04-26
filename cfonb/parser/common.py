@@ -107,13 +107,13 @@ class Parser(object):
             for key, value, size in self._regex:
                 pattern = '%d' in value and value % size or value
                 if not re.match(pattern, line[:size]):
-                    message += ("The key %s in position %s with the pattern %s"
-                                "do not match with %s\n"
+                    message += ("The key '%s' in position '%s' with the pattern '%s'"
+                                " does not match '%s'\n"
                                 %(key, index, pattern, line[:size]))
                 index += size
                 line = line[size:]
             raise ParsingError("Invalid line: %s. Please read detail"
-                               "message\n %s" %(line, message))
+                               " message\n %s" %(line, message))
         else:
             res = dict(zip(self.keys, list(match.groups())))
             return self._post(res)
